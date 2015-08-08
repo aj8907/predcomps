@@ -14,3 +14,8 @@ GetInputVarsFromModel.randomForest <- function(model) {
   # This seems like a robust way to get the input names from an glm object, but I'm not really sure
   return(attr(model$terms, "term.labels"))
 }
+
+GetInputVarsFromModel.rpart <- function(model) {
+  # This seems like a robust way to get the input names from an glm object, but I'm not really sure
+  return(attr(model$terms, "term.labels"))
+}
